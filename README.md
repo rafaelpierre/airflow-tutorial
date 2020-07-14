@@ -42,4 +42,5 @@ pip install apache-airflow
 
 ```bash
 export AIRFLOW_HOME=$(pwd)
-airflow initdb```
+airflow initdb
+```
