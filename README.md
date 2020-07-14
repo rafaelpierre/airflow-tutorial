@@ -1,34 +1,38 @@
-**Airflow Tutorial**
+# Airflow Tutorial
 
-**Preparation Steps**
+## Preparation Steps
 
-1. Activate Windows Subsystem for Linux (WSL)
+**1. Activate Windows Subsystem for Linux (WSL)**
 
-From a PowerShell prompt with Administrative access: *dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart*
+From a PowerShell prompt with Administrative access:
 
-2. Install Ubuntu 18LTS from the Microsoft Store
+`dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
 
-3. Install Python Dependencies: we will use Python 3.7, pip and venv for our demo. In case you don't have them, from the WSL Ubuntu prompt, run the following commands:
+**2. Install Ubuntu 18LTS from the Microsoft Store**
 
-sudo apt-get update
+**3. Install Python Dependencies**
+
+We will use Python 3.7, pip and venv for our demo. In case you don't have them:
+
+`sudo apt-get update
 sudo apt-get upgrade python3
 sudo apt-get install build-essential libssl-dev libffi-dev python-dev
 sudo apt-get update
 sudo apt install python3-pip
-sudo apt install -y python3-venv
+sudo apt install -y python3-venv`
 
-4. Create a new folder for your project, e.g. airflow-tutorial
+**4. Create a new folder for your project, e.g. airflow-tutorial**
 
-5. From this folder, create a virtual environment and activate it
+**5. From this folder, create a virtual environment and activate it**
 
-python3 -m venv venv
-source venv/bin/activate
+`python3 -m venv venv
+source venv/bin/activate`
 
-6. Install airflow
+**6. Install airflow**
 
-pip install apache-airflow
+`pip install apache-airflow`
 
-7. Run the initial configuration
+**7. Run the initial configuration**
 
-export AIRFLOW_HOME=$(pwd)
-airflow initdb
+`export AIRFLOW_HOME=$(pwd)
+airflow initdb`
