@@ -38,7 +38,7 @@ source venv/bin/activate
 pip install apache-airflow
 ```
 
-**7. Run the initial configuration**
+**7. Initialize SequentialExecutor & SQLite**
 
 ```bash
 export AIRFLOW_HOME=$(pwd)
