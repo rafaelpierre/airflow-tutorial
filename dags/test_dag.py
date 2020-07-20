@@ -33,6 +33,10 @@ t1 = BashOperator(
     bash_command="echo 'Hello Airflow!'",
     dag=dag)
 
+# Create task T2 to print the current time
+# Tip: in Linux, you do that with the following command:
+# date +"%FORMAT"
+
 t2 =
 
 # Create task T3 to create ~/my_file.txt
